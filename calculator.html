@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+</head>
+<body>
+    
+    <h1>My first calculator</h1>
+
+    First number <br/>
+    <input id="n1" type="number"/> <br>
+    Second number <br/>
+    <input id="n2" type="number"/> <br> 
+    <br><button onclick="sum()">Addition</button>
+    <button onclick="sub()">Substraction</button>
+    <button onclick="mult()">Multiplication</button>
+    <button onclick="div()">Division</button> 
+    <br/><br/>
+    Result: <span></span>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var result = document.querySelector('span')
+    
+        function sum() {
+            result.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+        }
+    
+         function sub() {
+            result.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+        }
+    
+         function mult() {
+            result.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+        }
+    
+         function div() {
+            result.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+        }
+    
+        function sum() {
+            result.innerHTML = n1.value + n2.value
+        }
+        
+        function sub() {
+            result.innerHTML = n1.value - n2.value
+        }
+    
+        function mult() {
+            result.innerHTML = n1.value * n2.value
+        }
+    
+        function div() {
+            result.innerHTML = n1.value / n2.value
+        }
+    
+    </script>
+   
+</body>
+</html>
